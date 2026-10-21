@@ -1,0 +1,21 @@
+MI BOLSILLO — PWA INSTALABLE
+
+Archivos:
+- index.html: aplicación
+- manifest.webmanifest: nombre, iconos y ajustes de instalación
+- sw.js: caché para funcionamiento sin conexión
+- icons/: iconos de la aplicación
+
+IMPORTANTE:
+La instalación PWA requiere servir estos archivos desde una dirección HTTPS (o localhost).
+Abrir index.html directamente como archivo no activa el service worker ni la instalación PWA.
+
+PUBLICACIÓN SENCILLA:
+1. Sube el contenido de esta carpeta a un alojamiento estático HTTPS (por ejemplo, GitHub Pages, Netlify o similar).
+2. Abre la URL HTTPS publicada en Safari en el iPhone.
+3. Pulsa Compartir > Añadir a pantalla de inicio > Añadir.
+4. Abre Mi Bolsillo desde el nuevo icono.
+
+DATOS:
+Los movimientos se guardan en localStorage del navegador/dispositivo. No hay sincronización entre dispositivos.
+Exporta una copia desde Ajustes periódicamente. Borrar los datos del navegador puede borrar los registros.
